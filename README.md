@@ -20,7 +20,31 @@
      python3 ./devel/lib/subscriber_package_py/subscriber_code.py
      ```
 
+### C++ Version
 
+1. **Build the C++ Packages**:
+   - Navigate to your catkin workspace:
+     ```bash
+     cd ~/catkin_ws
+     ```
+   - Build the workspace:
+     ```bash
+     catkin_make
+     ```
+
+2. **Run the C++ Publisher and Subscriber**:
+   - Ensure that `publisher_package` and `subscriber_package` are located at the same directory level.
+   - Start the ROS core:
+     ```bash
+     roscore &
+     ```
+   - Run the Publisher:
+     ```bash
+     rosrun publisher_package publisher_node
+     ```
+   - Run the Subscriber:
+     ```bash
+     rosrun subscriber_package subscriber_node
      ```
 
 ## Notes
